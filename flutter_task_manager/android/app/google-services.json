@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "959103626078",
+    "project_id": "fluttertaskmanager-8bc16",
+    "storage_bucket": "fluttertaskmanager-8bc16.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959103626078:android:c4bce02e9c18ffd9cb7dcf",
+        "android_client_info": {
+          "package_name": "com.example.flutter_task_manager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "959103626078-k6s2gg6okdjh96k9adkml9rromvbd38j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZfzDt4PwBBmVM1zSh5z5aHGvAuvmqC7A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "959103626078-k6s2gg6okdjh96k9adkml9rromvbd38j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
