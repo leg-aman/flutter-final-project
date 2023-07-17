@@ -4,8 +4,8 @@ import 'package:flutter_task_manager/model/todo.dart';
 
 class ToDoItem extends StatelessWidget {
   final ToDo todo;
-  final onToDoChanged;
-  final onDeleteItem;
+  final Function onToDoChanged;
+  final Function onDeleteItem;
   const ToDoItem(
       {super.key,
       required this.todo,
@@ -43,9 +43,10 @@ class ToDoItem extends StatelessWidget {
             ),
             child: IconButton(
               onPressed: () {
-                onDeleteItem(todo.id);
+                // onDeleteItem(todo.id);
+                onDeleteItem();
               },
-              icon: const Icon(Icons.delete),
+              icon: const Icon(Icons.delete_rounded),
               iconSize: 18,
               color: Colors.white,
             ),

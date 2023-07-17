@@ -66,10 +66,6 @@ class _LoginPageState extends State<LoginPage> {
     }
   }
 
-  Widget _title() {
-    return const Text('Firebase Auth');
-  }
-
   Widget _entryField(
     String title,
     TextEditingController controller,
@@ -102,7 +98,7 @@ class _LoginPageState extends State<LoginPage> {
               ? signInWithEmailAndPassword
               : createUserWithEmailAndPassword),
       child: isLoading
-          ? CircularProgressIndicator()
+          ? const CircularProgressIndicator()
           : Text(isLogin ? 'Login' : 'Register'),
     );
   }
@@ -121,13 +117,17 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: _title(),
-      ),
       body: Container(
         height: double.infinity,
         width: double.infinity,
         padding: const EdgeInsets.all(20),
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: NetworkImage(
+                'https://images.unsplash.com/photo-1579547621706-1a9c79d5c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'), // Replace with your texture image asset
+            fit: BoxFit.cover,
+          ),
+        ),
         child: Form(
           key: _formKey,
           child: Column(
